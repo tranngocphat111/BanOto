@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel='shortcut icon' href='./assets/img/logoEsport.png' type='image/x-icon'>
@@ -7,17 +8,17 @@
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.5.1-web/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/base.css">
-    <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
-    
-    
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <script src="./bootrap/bootstrap.bundle.min.js"></script>
     <title>Bán Ô tô ,phụ tùng ô tô</title>
 </head>
+
 <body>
-    <input type="checkbox" hidden id="header__menu-checkbox" class="header__menu-hiden-on-checkbox">
     <!-- Header menu -->
-    
-    <div class="header__menu-main header__menu-hiden-on-checkbox">
+
+    <div class="header__menu-main ">
         <ul class="header__menu-list">
             <li class="header__menu-item">
                 <i class="fa-solid fa-phone"></i>
@@ -36,24 +37,32 @@
         <h2 class="header__menu-list-title">Danh mục</h2>
         <ul class="header__menu-list header__menu-list-categogy">
             <li class="header__menu-item">
-                <img src="./assets/img/Danhmuc/dongco.webp" alt="" class="header__menu-item__img">
-                <a href="" class="header__menu-link">Động cơ</a>
+                <img src="./assets/img/Danhmuc/menu/dongco.jpg" alt="" class="header__menu-item__img">
+                <a href="" class="header__menu-link">Phụ tùng ô tô</a>
             </li>
             <li class="header__menu-item">
-                <img src="./assets/img/Danhmuc/banhxe.jpg" alt="" class="header__menu-item__img">
-                <a href="" class="header__menu-link">Bánh xe</a>
+                <img src="./assets/img/Danhmuc/menu/banhxe.jpg" alt="" class="header__menu-item__img">
+                <a href="" class="header__menu-link">Lốp bánh xe</a>
             </li>
             <li class="header__menu-item">
-                <img src="./assets/img/Danhmuc/phukienngoaithat.jpg" alt="" class="header__menu-item__img">
+                <img src="./assets/img/Danhmuc/menu/phukienngoaithat.jpg" alt="" class="header__menu-item__img">
                 <a href="" class="header__menu-link">Phụ kiện ngoại thất</a>
             </li>
             <li class="header__menu-item">
-                <img src="./assets/img/Danhmuc/loa.jpg" alt="" class="header__menu-item__img">
-                <a href="" class="header__menu-link">Loa</a>
+                <img src="./assets/img/Danhmuc/menu/loa.jpg" alt="" class="header__menu-item__img">
+                <a href="" class="header__menu-link">Âm thanh</a>
             </li>
             <li class="header__menu-item">
-                <img src="./assets/img/Danhmuc/ghe.jpg" alt="" class="header__menu-item__img">
+                <img src="./assets/img/Danhmuc/menu/ghe.jpg" alt="" class="header__menu-item__img">
                 <a href="" class="header__menu-link">Ghế</a>
+            </li>
+            <li class="header__menu-item">
+                <img src="./assets/img/Danhmuc/menu/denxe.jpg" alt="" class="header__menu-item__img">
+                <a href="" class="header__menu-link">Đèn xe</a>
+            </li>
+            <li class="header__menu-item">
+                <img src="./assets/img/Danhmuc/menu/phukiennoithat.jpg" alt="" class="header__menu-item__img">
+                <a href="" class="header__menu-link">Nội thất</a>
             </li>
         </ul>
 
@@ -61,11 +70,11 @@
             <i class="header__menu-close-icon fa-solid fa-xmark"></i>
         </label>
     </div>
-    <!-- Overlay -->
-    <label for="header__menu-checkbox" class="overlay header__menu-hiden-on-checkbox"></label>
+    <!-- Overlay category -->
+    <label for="header__menu-checkbox" class="overlay__category header__menu-hiden-on-checkbox"></label>
     <!-- Container -->
     <div class="container grid wide">
-        
+
         <!-- Header -->
 
         <div class="header">
@@ -74,12 +83,12 @@
                     <label for="header__menu-checkbox" class="header__menu">
                         <i class="header__menu-icon  ti-menu"></i>
                     </label>
-                    
+
                     <a href="" class="header__logo">
                         <img src="./assets/img/logoEsport.png" alt="" class="header-logo__img">
                     </a>
                 </div>
-    
+
                 <div class="header-search">
                     <input type="text" class="header-search__input" placeholder="Tìm kiếm của bạn...">
                     <div class="header-search-history">
@@ -101,56 +110,42 @@
                     </div>
                     <i class="ti-search header-search__icon"></i>
                 </div>
-    
+
                 <div class="header-select">
-                    <div class="header-select__car">
-                        <div class="header-select-car__quantity">3</div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="19"><g fill="none" stroke="#111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"><path d="M10.4 12.6H8.8c-1 0-1.8-.8-1.8-1.8V8c0-1.2 1-2.2 2.1-2.2h1.7c1.4 0 3.2-2.3 4.8-2.3h9.3c.8 0 4.4 2.2 5.3 2.7 0 0 2.5.2 4.4.5 2.1.4 4.4 1.1 4.4 2.7v2.2c0 .7-.6 1.7-2.5 1.7"/><ellipse cx="14.1" cy="13" rx="2.4" ry="2.5"/><ellipse cx="32.7" cy="13" rx="2.4" ry="2.5"/><path d="M18.4 14.3h10.4"/></g></svg>
+                    <div class="header-select__car ">
+                        <div class="header-select-car__quantity">0</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="19">
+                            <g fill="none" stroke="#111" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-miterlimit="10">
+                                <path
+                                    d="M10.4 12.6H8.8c-1 0-1.8-.8-1.8-1.8V8c0-1.2 1-2.2 2.1-2.2h1.7c1.4 0 3.2-2.3 4.8-2.3h9.3c.8 0 4.4 2.2 5.3 2.7 0 0 2.5.2 4.4.5 2.1.4 4.4 1.1 4.4 2.7v2.2c0 .7-.6 1.7-2.5 1.7" />
+                                <ellipse cx="14.1" cy="13" rx="2.4" ry="2.5" />
+                                <ellipse cx="32.7" cy="13" rx="2.4" ry="2.5" />
+                                <path d="M18.4 14.3h10.4" />
+                            </g>
+                        </svg>
                         <span class="header-select__title">Chọn loại xe</span>
-                        <!-- select car option -->
-                        <div class="header-select__car-option">
-                            <ul class="header-select__car-list">
-                                <li class="header-select__car-item header-select__car-item--chosse">
-                                    <span class="header-select__car-item-name">Dòng xe Sedan</span>
-                                    <i class="header-select__car-item-icon fa-solid fa-check"></i>
-                                </li>
-                                <li class="header-select__car-item header-select__car-item--chosse">
-                                    <span class="header-select__car-item-name">Dòng xe HatchBack</span>
-                                    <i class="header-select__car-item-icon fa-solid fa-check"></i>
-                                </li>
-                                <li class="header-select__car-item">
-                                    <span class="header-select__car-item-name">Dòng xe SUV – xe thể thao đa dụng</span>
-                                </li>
-                                <li class="header-select__car-item">
-                                    <span class="header-select__car-item-name">Dòng xe Crossover (CUV)</span>
-                                </li>
-                                <li class="header-select__car-item header-select__car-item--chosse">
-                                    <span class="header-select__car-item-name">Dòng xe Convertible – xe mui trần</span>
-                                    <i class="header-select__car-item-icon fa-solid fa-check"></i>
-                                </li>
-                            </ul>
-                        </div>
                     </div>
 
 
                     <div class="header-select__user-and-cart">
                         <div href="" class="header-select__user">
                             <img src="./assets/img/user.png" alt="" class="header-select__user-img">
-
                             <!-- Login -->
                             <div class="header-select__user-option">
                                 <div class="header-select__user-option-container">
                                     <h2 class="header-select__user-title">Tài khoản của tôi</h2>
-                                    <button class="header-select__user-btn">Đăng Nhập</button>
+                                    <a href="./htmlChild/Login.html" class="header-select__user-btn">Đăng Nhập</a>
                                     <div class="header-select__user-help-register">
                                         <span class="header-select__user-des">
                                             Bạn chưa có tài khoản?
-                                            <a href="" class="header-select__user-link">Đăng Ký</a>
+                                            <a href="/htmlChild/signUp.html" class="header-select__user-link">Đăng
+                                                Ký</a>
                                         </span>
                                     </div>
                                     <ul class="header-select__user-list">
                                         <li class="header-select__user-item">
-                                            <a href="" class="header-select__user-item-link">Thông tin tài khoản</a> 
+                                            <a href="" class="header-select__user-item-link">Thông tin tài khoản</a>
                                         </li>
                                         <li class="header-select__user-item">
                                             <a href="" class="header-select__user-item-link">Đơn hàng</a>
@@ -172,40 +167,1618 @@
 
                 </div>
             </div>
+            <!-- Overlay select car -->
+            <div class="overlay__select-car "></div>
+            <!-- select car option -->
+            <div class="header-select__car-option">
+                <div class="select-car__close"><i class="fa-solid fa-xmark"></i></div>
+                <ul class="header-select__car-list">
+                    <li class="header-select__car-item header-select__car-item--chosse">
+                        <span class="header-select__car-item-name ">Sedan</span>
+                    </li>
+                    <li class="header-select__car-item">
+                        <span class="header-select__car-item-name">HatchBack</span>
+                    </li>
+                    <li class="header-select__car-item">
+                        <span class="header-select__car-item-name">SUV</span>
+                    </li>
+                    <li class="header-select__car-item">
+                        <span class="header-select__car-item-name">Coupe</span>
+                    </li>
+                </ul>
 
-            <!-- Navigation-->
-            <div class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="" class="nav__item-link">Động cơ</a>
+                <ul class="header-select__car-sub-option">
+                    <li class="header-select__car-sub-option-item">
+                        <div class="header-select__car-sub-option__number-main">
+                            <span class="header-select__car-sub-option__number">1</span>
+                        </div>
+                        <span class="header-select__car-sub-option__content">Năm</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <ul class="header-select__car-sub-option-list-1">
+                            <li class="header-select__car-sub-option-list-item">2025</li>
+                            <li class="header-select__car-sub-option-list-item">2024</li>
+                            <li class="header-select__car-sub-option-list-item">2023</li>
+                            <li class="header-select__car-sub-option-list-item">2022</li>
+                            <li class="header-select__car-sub-option-list-item">2021</li>
+                            <li class="header-select__car-sub-option-list-item">2020</li>
+                            <li class="header-select__car-sub-option-list-item">2019</li>
+                            <li class="header-select__car-sub-option-list-item">2018</li>
+                            <li class="header-select__car-sub-option-list-item">2017</li>
+                            <li class="header-select__car-sub-option-list-item">2016</li>
+                            <li class="header-select__car-sub-option-list-item">2015</li>
+                            <li class="header-select__car-sub-option-list-item">2014</li>
+                            <li class="header-select__car-sub-option-list-item">2013</li>
+                            <li class="header-select__car-sub-option-list-item">2012</li>
+                            <li class="header-select__car-sub-option-list-item">2011</li>
+                            <li class="header-select__car-sub-option-list-item">2010</li>
+                            <li class="header-select__car-sub-option-list-item">2009</li>
+                            <li class="header-select__car-sub-option-list-item">2008</li>
+                            <li class="header-select__car-sub-option-list-item">2007</li>
+                        </ul>
                     </li>
-                    
-                    <li class="nav__item">
-                        <a href="" class="nav__item-link">Bánh xe</a>
+
+                    <li class="header-select__car-sub-option-item">
+                        <div class="header-select__car-sub-option__number-main">
+                            <span class="header-select__car-sub-option__number">2</span>
+                        </div>
+                        <span class="header-select__car-sub-option__content">Loại Xe</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <ul class="header-select__car-sub-option-list-2">
+                            <li class="header-select__car-sub-option-list-item">Cũ</li>
+                            <li class="header-select__car-sub-option-list-item">Thường</li>
+                            <li class="header-select__car-sub-option-list-item">VIP</li>
+                        </ul>
                     </li>
-                    
-                    <li class="nav__item">
-                        <a href="" class="nav__item-link">Phụ kiện ngoại thất</a>
+                    <li class="header-select__car-sub-option-item">
+                        <div class="header-select__car-sub-option__number-main">
+                            <span class="header-select__car-sub-option__number">3</span>
+                        </div>
+                        <span class="header-select__car-sub-option__content">Màu</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <ul class="header-select__car-sub-option-list-3">
+                            <li class="header-select__car-sub-option-list-item">Trắng</li>
+                            <li class="header-select__car-sub-option-list-item">Đen</li>
+                            <li class="header-select__car-sub-option-list-item">Xám</li>
+                            <li class="header-select__car-sub-option-list-item">Đỏ</li>
+                            <li class="header-select__car-sub-option-list-item">Bạc</li>
+                            <li class="header-select__car-sub-option-list-item">Xanh da trời</li>
+                        </ul>
                     </li>
-                    
-                    <li class="nav__item">
-                        <a href="" class="nav__item-link">Loa</a>
-                    </li>
-                    
-                    <li class="nav__item">
-                        <a href="" class="nav__item-link">Ghế</a>
-                    </li>
-                    
-                    <li class="nav__item">
-                        <a href="" class="nav__item-link">Phụ kiện ngoại thất</a>
-                    
-                    
+
+                    <button class="header-select__car-sub-option-btn">GO</button>
+
                 </ul>
             </div>
 
 
+            <!-- Overlay catogory option -->
+            <div class="overlay__category-option"></div>
+            <!-- Navigation-->
+            <div class="nav-bar">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <div class="nav__item-link">Phụ tùng ô tô</div>
+                    </li>
+
+                    <li class="nav__item">
+                        <div class="nav__item-link">Lốp bánh xe</div>
+                    </li>
+
+                    <li class="nav__item">
+                        <div class="nav__item-link">Ngoại thất</div>
+                    </li>
+
+                    <li class="nav__item">
+                        <div class="nav__item-link">Âm thanh & Điện tử</div>
+                    </li>
+
+                    <li class="nav__item">
+                        <div class="nav__item-link">Đèn xe</div>
+                    </li>
+
+                    <li class="nav__item">
+                        <div class="nav__item-link">Nội thất</div>
+
+
+                </ul>
+            </div>
+            <!-- Navigation option 1-->
+            <div class="nav__option-main--1 nav__option-btn-close--1">
+                <h1 class="nav__option-title">Phụ tùng ô tô</h1>
+                <label for="nav__option__checkbox--1" class="nav__option-close">
+                    <i class="nav__option-close-icon fa-solid fa-xmark"></i>
+                </label>
+                <div class="nav__option-list">
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/phutung/duongtruyen.jpg" alt="" class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Đường truyền</span>
+                    </div>
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/phutung/chiphieusuat.jpg" alt=""
+                                class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Chip hiệu suất</span>
+                    </div>
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/phutung/cangatnuoc.jpg" alt="" class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Cần gạt nước</span>
+                    </div>
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/phutung/cungcapnhienlieu.jpg" alt=""
+                                class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Cung cấp nhiên liệu</span>
+                    </div>
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/phutung/danhlua.jpg" alt="" class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Đánh lửa</span>
+                    </div>
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/phutung/dau.jpg" alt="" class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Dầu nhớt</span>
+                    </div>
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/phutung/dien.jpg" alt="" class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Điện</span>
+                    </div>
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/phutung/dinhchi.jpg" alt="" class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Đinh chì</span>
+                    </div>
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/phutung/dongco.jpg" alt="" class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Động cơ</span>
+                    </div>
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/phutung/hethonglai.jpg" alt="" class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Hệ thống lái</span>
+                    </div>
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/phutung/khithai.jpg" alt="" class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Khí thải</span>
+                    </div>
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/phutung/kiemsoatkhithai.jpg" alt=""
+                                class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Kiểm soát khí thải</span>
+                    </div>
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/phutung/laytruyen.jpg" alt="" class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Lây truyền</span>
+                    </div>
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/phutung/luongkhinap.jpg" alt="" class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Lượng khí nạp</span>
+                    </div>
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/phutung/maylanh.jpg" alt="" class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Máy lạnh</span>
+                    </div>
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/phutung/phanh.jpg" alt="" class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Phanh</span>
+                    </div>
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/phutung/quatdongco.jpg" alt="" class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Quạt</span>
+                    </div>
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/phutung/sac.jpg" alt="" class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Acquy</span>
+                    </div>
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/phutung/thietbidua.jpg" alt="" class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Thiết bị đ</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Navigation option 2-->
+            <div class="nav__option-main--2  nav__option-btn-close--2">
+                <h1 class="nav__option-title">Lốp bánh xe</h1>
+                <label for="nav__option__checkbox--2" class="nav__option-close">
+                    <i class="nav__option-close-icon fa-solid fa-xmark"></i>
+                </label>
+                <div class="nav__option-list">
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/banhxe/banhxe.jpg" alt="" class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Bánh xe</span>
+                    </div>
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/banhxe/banhxetuychinh.jpg" alt=""
+                                class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Bánh xe tùy chỉnh</span>
+                    </div>
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/banhxe/cambienTBMS.jpg" alt="" class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Cảm biến TBMS</span>
+                    </div>
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/banhxe/lopxe.jpg" alt="" class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Lốp xe</span>
+                    </div>
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/banhxe/lopxich.jpg" alt="" class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Lốp xích</span>
+                    </div>
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/banhxe/miengdembanhxe.jpg" alt=""
+                                class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Miếng đệm bánh xe</span>
+                    </div>
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/banhxe/mutrungtam.jpg" alt="" class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Mũ trung tâm</span>
+                    </div>
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/banhxe/nienxe.jpg" alt="" class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Niềng xe</span>
+                    </div>
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/banhxe/okhoadaioc.jpg" alt="" class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Ổ khóa đai Oóc</span>
+                    </div>
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/banhxe/vothuoccap.jpg" alt="" class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Vỏ thuốc cặp</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Navigation option 3-->
+            <div class="nav__option-main--3 nav__option-btn-close--3">
+                <h1 class="nav__option-title">Phụ kiện ngoại thất</h1>
+                <label for="nav__option__checkbox--3" class="nav__option-close">
+                    <i class="nav__option-close-icon fa-solid fa-xmark"></i>
+                </label>
+                <div class="nav__option-list">
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/ngoaithat/banchay.jpg" alt="" class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Ban chạy</span>
+                    </div>
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/ngoaithat/bodoihuonggio.jpg" alt=""
+                                class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Bộ đổi hướng gió</span>
+                    </div>
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/ngoaithat/cangdiahinh.jpg" alt=""
+                                class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Cảng địa hình</span>
+                    </div>
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/ngoaithat/chieuhau.jpg" alt="" class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Gương</span>
+                    </div>
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/ngoaithat/cuadoc.jpg" alt="" class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Cửa dọc</span>
+                    </div>
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/ngoaithat/denpha.jpg" alt="" class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Đèn pha</span>
+                    </div>
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/ngoaithat/keo&moc.jpg" alt="" class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Kéo & móc</span>
+                    </div>
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/ngoaithat/khungbienso.jpg" alt=""
+                                class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Khung biển số</span>
+                    </div>
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/ngoaithat/luoibaove.jpg" alt="" class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Lưới bảo vệ</span>
+                    </div>
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/ngoaithat/nocxe.jpg" alt="" class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Nóc xe</span>
+                    </div>
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/ngoaithat/voboctonneu.jpg" alt=""
+                                class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Vỏ bọc Tonneu</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Navigation option 4-->
+            <div class="nav__option-main--4 nav__option-btn-close--4">
+                <h1 class="nav__option-title">Âm thanh & Điện tử</h1>
+                <label for="nav__option__checkbox--4" class="nav__option-close">
+                    <i class="nav__option-close-icon fa-solid fa-xmark"></i>
+                </label>
+                <div class="nav__option-list">
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/amthanh/banghinh.jpg" alt="" class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Băng hình</span>
+                    </div>
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/amthanh/bodieukihien.jpg" alt=""
+                                class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Bộ điều khiển</span>
+                    </div>
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/amthanh/bokhuechdai.jpg" alt="" class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Bộ khuếch đại</span>
+                    </div>
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/amthanh/bophanlapdat.jpg" alt=""
+                                class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Bộ phận lắp đặt</span>
+                    </div>
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/amthanh/boxuli.jpg" alt="" class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Bộ xử lí</span>
+                    </div>
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/amthanh/DaiCB&linhkien.jpg" alt=""
+                                class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Đài CB & Linh kiện</span>
+                    </div>
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/amthanh/HeThongGPS.jpg" alt="" class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Hệ thống GPS</span>
+                    </div>
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/amthanh/loa.jpg" alt="" class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Loa</span>
+                    </div>
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/amthanh/loasieutram.jpg" alt="" class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Loa siêu trầm</span>
+                    </div>
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/amthanh/maydoradar.jpg" alt="" class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Máy dò Radar</span>
+                    </div>
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/amthanh/pin.jpg" alt="" class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Ác quy</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Navigation option 5-->
+            <div class="nav__option-main--5 nav__option-btn-close--5">
+                <h1 class="nav__option-title">Đèn xe</h1>
+                <label for="nav__option__checkbox--5" class="nav__option-close">
+                    <i class="nav__option-close-icon fa-solid fa-xmark"></i>
+                </label>
+                <div class="nav__option-list">
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/denxe/dengam.jpg" alt="" class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Đèn gầm</span>
+                    </div>
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/denxe/denLed.jpg" alt="" class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Đèn Led</span>
+                    </div>
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/denxe/denngoaiduong.jpg" alt="" class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Đèn đi đường</span>
+                    </div>
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/denxe/denpha.jpg" alt="" class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Đèn pha</span>
+                    </div>
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/denxe/dentinhieu.jpg" alt="" class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Đèn tín hiệu</span>
+                    </div>
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/denxe/denxemoc.jpg" alt="" class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Đèn Xe móc</span>
+                    </div>
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/denxe/desuongmu.jpg" alt="" class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Đèn sương mù</span>
+                    </div>
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/denxe/duoiden.jpg" alt="" class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Đuôi đèn</span>
+                    </div>
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/denxe/phukienchieusang.jpg" alt=""
+                                class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Phụ kiện chiếu sáng</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Navigation option 6-->
+            <div class="nav__option-main--6 nav__option-btn-close--6">
+                <h1 class="nav__option-title">Phụ Kiện nội thất</h1>
+                <label for="nav__option__checkbox--6" class="nav__option-close">
+                    <i class="nav__option-close-icon fa-solid fa-xmark"></i>
+                </label>
+                <div class="nav__option-list">
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/noithat/bandap.jpg" alt="" class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Bàn đạp</span>
+                    </div>
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/noithat/Bocghe.jpg" alt="" class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Bọc ghế</span>
+                    </div>
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/noithat/bodungcuDash.jpg" alt=""
+                                class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Bộ dụng cụ Dash</span>
+                    </div>
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/noithat/Donghodotuychinh.jpg" alt=""
+                                class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Đồng hồ đo tùy chỉnh</span>
+                    </div>
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/noithat/ghe.jpg" alt="" class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Ghế ngồi</span>
+                    </div>
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/noithat/lothanghoa.jpg" alt="" class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Lót hàng hóa</span>
+                    </div>
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/noithat/numchuyenso.jpg" alt="" class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Núm chuyển số</span>
+                    </div>
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/noithat/Tamchenang.jpg" alt="" class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Tấm che nắng</span>
+                    </div>
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/noithat/Taylai.jpg" alt="" class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Tay lái</span>
+                    </div>
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/noithat/thamsan.jpg" alt="" class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Thảm sàn</span>
+                    </div>
+                    <div class="nav__option-item">
+                        <div class="nav__option-item-img-main">
+                            <img src="./assets/img/Danhmuc/noithat/vobocdash.jpg" alt="" class="nav__option-item-img">
+                        </div>
+                        <span class="nav__option-name">Vỏ bọc Dash</span>
+                    </div>
+
+                </div>
+
+            </div>
+
 
         </div>
+        <!-- Main content -->
+        <div class="main-content grid wide">
+            <!-- Panner -->
+            <div class="panner">
+                <ul class="panner__list">
+                    <div class="panner__layout"></div>
+                    <li class="panner-img">
+                        <img src="./assets/img/panner/panner1.jpg" alt="">
+                        <div class="panner__layout"></div>
+                    </li>
+                    <li class="panner-img">
+                        <img src="./assets/img/panner/panner2.jpg" alt="">
+                    </li>
+                    <li class="panner-img">
+                        <img src="./assets/img/panner/panner3.jpg" alt="">
+                    </li>
+                    <li class="panner-img">
+                        <img src="./assets/img/panner/panner4.jpg" alt="">
+                    </li>
+                    <div class="panner__content">
+                        <h1 class="panner__title">PHỤ TÙNG & PHỤ KIỆN XE HƠI</h1>
+                        <span class="panner__des">Tùy chỉnh, Sửa đổi, Nâng cấp, Sửa chữa, Thay thế</span>
+                        <div class="panner__bottom">
+                            <span class="panner__bottom--left">Sản phẩm của shop (20,699)</span>
+                            <span class="panner__bottom--right">Sản phẩm của shop (20,699) | Thương hiệu (206)</span>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+
+            <!-- Select option main -->
+            <ul class="header-select__car-sub-option select--Main">
+                <div class="select--Main__content">
+                    <h1 class="select--Main__title">Chọn phương tiện của bạn</h1>
+                    <span class="select--Main__des">Cung cấp thông tin chi tiết về xe của bạn</span>
+                </div>
+                <li class="header-select__car-sub-option-item select--Main-input ">
+                    <div class="header-select__car-sub-option__number-main">
+                        <span class="header-select__car-sub-option__number">1</span>
+                    </div>
+                    <span class="header-select__car-sub-option__content">Năm</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                    <ul class="header-select__car-sub-option-list-1">
+                        <li class="header-select__car-sub-option-list-item">2025</li>
+                        <li class="header-select__car-sub-option-list-item">2024</li>
+                        <li class="header-select__car-sub-option-list-item">2023</li>
+                        <li class="header-select__car-sub-option-list-item">2022</li>
+                        <li class="header-select__car-sub-option-list-item">2021</li>
+                        <li class="header-select__car-sub-option-list-item">2020</li>
+                        <li class="header-select__car-sub-option-list-item">2019</li>
+                        <li class="header-select__car-sub-option-list-item">2018</li>
+                        <li class="header-select__car-sub-option-list-item">2017</li>
+                        <li class="header-select__car-sub-option-list-item">2016</li>
+                        <li class="header-select__car-sub-option-list-item">2015</li>
+                        <li class="header-select__car-sub-option-list-item">2014</li>
+                        <li class="header-select__car-sub-option-list-item">2013</li>
+                        <li class="header-select__car-sub-option-list-item">2012</li>
+                        <li class="header-select__car-sub-option-list-item">2011</li>
+                        <li class="header-select__car-sub-option-list-item">2010</li>
+                        <li class="header-select__car-sub-option-list-item">2009</li>
+                        <li class="header-select__car-sub-option-list-item">2008</li>
+                        <li class="header-select__car-sub-option-list-item">2007</li>
+                    </ul>
+                </li>
+
+                <li class="header-select__car-sub-option-item select--Main-input">
+                    <div class="header-select__car-sub-option__number-main">
+                        <span class="header-select__car-sub-option__number">2</span>
+                    </div>
+                    <span class="header-select__car-sub-option__content">Loại Xe</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                    <ul class="header-select__car-sub-option-list-2">
+                        <li class="header-select__car-sub-option-list-item">Cũ</li>
+                        <li class="header-select__car-sub-option-list-item">Thường</li>
+                        <li class="header-select__car-sub-option-list-item">VIP</li>
+                    </ul>
+                </li>
+                <li class="header-select__car-sub-option-item select--Main-input">
+                    <div class="header-select__car-sub-option__number-main">
+                        <span class="header-select__car-sub-option__number">3</span>
+                    </div>
+                    <span class="header-select__car-sub-option__content">Màu</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                    <ul class="header-select__car-sub-option-list-3">
+                        <li class="header-select__car-sub-option-list-item">Trắng</li>
+                        <li class="header-select__car-sub-option-list-item">Đen</li>
+                        <li class="header-select__car-sub-option-list-item">Xám</li>
+                        <li class="header-select__car-sub-option-list-item">Đỏ</li>
+                        <li class="header-select__car-sub-option-list-item">Bạc</li>
+                        <li class="header-select__car-sub-option-list-item">Xanh da trời</li>
+                    </ul>
+                </li>
+
+                <button class="header-select__car-sub-option-btn">GO</button>
+
+            </ul>
+            <div class="nav-category">
+                <a href="" class="nav-category__item">
+                    <div class="nav-category-main">
+                        <img src="./assets/img/banxe-main/ferari-botofino-M.png" alt=""
+                            class="nav-category__img nav-category__img--car">
+                    </div>
+                    <span class="nav-category__item-titile">Xe</span>
+                </a>
+                <a href="" class="nav-category__item">
+                    <div class="nav-category-main">
+                        <img src="./assets/img/Nav__category/dongco.jpg" alt="" class="nav-category__img">
+                    </div>
+                    <span class="nav-category__item-titile">Phụ tùng </span>
+                </a>
+                <a href="" class="nav-category__item">
+                    <div class="nav-category-main">
+                        <img src="./assets/img/Nav__category/banhxe.jpg" alt="" class="nav-category__img">
+                    </div>
+                    <span class="nav-category__item-titile">Bánh xe</span>
+                </a>
+                <a href="" class="nav-category__item">
+                    <div class="nav-category-main">
+                        <img src="./assets/img/Nav__category/phukienngoaithat.jpg" alt="" class="nav-category__img">
+                    </div>
+                    <span class="nav-category__item-titile">Ngoại thất</span>
+                </a>
+                <a href="" class="nav-category__item">
+                    <div class="nav-category-main">
+                        <img src="./assets/img/Nav__category/denxe.jpg" alt="" class="nav-category__img">
+                    </div>
+                    <span class="nav-category__item-titile">Đèn</span>
+                </a>
+                <a href="" class="nav-category__item">
+                    <div class="nav-category-main">
+                        <img src="./assets/img/Nav__category/than.jpg" alt="" class="nav-category__img">
+                    </div>
+                    <span class="nav-category__item-titile">Thân</span>
+                </a>
+                <a href="" class="nav-category__item">
+                    <div class="nav-category-main">
+                        <img src="./assets/img/Nav__category/interior.jpg" alt="" class="nav-category__img">
+                    </div>
+                    <span class="nav-category__item-titile">Nội thất</span>
+                </a>
+                <a href="" class="nav-category__item">
+                    <div class="nav-category-main">
+                        <img src="./assets/img/Nav__category/loa.jpg" alt="" class="nav-category__img">
+                    </div>
+                    <span class="nav-category__item-titile">Loa</span>
+                </a>
+                <a href="" class="nav-category__item">
+                    <div class="nav-category-main">
+                        <img src="./assets/img/Nav__category/tool.jpg" alt="" class="nav-category__img">
+                    </div>
+                    <span class="nav-category__item-titile">Dụng cụ </span>
+                </a>
+
+            </div>
+            <!-- Buy car -->
+            <!-- Discount car-->
+            <div class="discount row">
+                <div class="col l-3">
+                    <div class="discount__list">
+                        <div class="discount__item">
+                            <div class="discount__item-img-main">
+                                <div class="discount__item-layout"></div>
+                                <img src="./assets/img/discount/product.jpg" alt="" class="discount__item-img">
+                            </div>
+                            <div class="discount__item-content">
+                                <h1 class="discount__item-title">GIẢM 20%</h1>
+                                <span class="discount__item-des">Chọn sản phẩm</span>
+                                <a href="" class="discount__item-btn">Mua ngay</a>
+                            </div>
+                        </div>
+                        <div class="discount__item">
+                            <div class="discount__item-layout"></div>
+                            <img src="./assets/img/discount/giamxoc.jpg" alt="" class="discount__item-img">
+                            <div class="discount__item-content">
+                                <h1 class="discount__item-title">VẬN CHUYỂN MIỄN PHÍ</h1>
+                                <a href="" class="discount__item-btn">Mua ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l-6 discount__item--center">
+                    <div class="discount__item discount__item--center">
+                        <div class="discount__item-img-main">
+                            <div class="discount__item-layout"></div>
+                            <img src="./assets/img/discount/xe.jpg" alt=""
+                                class="discount__item-img discount__item-img--center">
+                        </div>
+                        <div class="discount__item-content discount__item-content--center">
+                            <h1 class="discount__item-title discount__item-title--center">TIẾT KIỆM 10%</h1>
+                            <span class="discount__item-des discount__item-des--center">KHI MUA DAYTONA-SP3</span>
+                            <a href="" class="discount__item-btn discount__item-btn--center">Mua ngay</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l-3">
+                    <div class="discount__list">
+                        <div class="discount__item">
+                            <div class="discount__item-img-main">
+                                <div class="discount__item-layout"></div>
+                                <img src="./assets/img/discount/denxe.jpg" alt=""
+                                    class="discount__item-img discount__item-img--right">
+                            </div>
+                            <div class="discount__item-content">
+                                <h1 class="discount__item-title">GIẢM 15%</h1>
+                                <span class="discount__item-des">ĐÈN LEB</span>
+                                <a href="" class="discount__item-btn">Mua ngay</a>
+                            </div>
+                        </div>
+                        <div class="discount__item">
+                            <div class="discount__item-layout"></div>
+                            <img src="./assets/img/discount/lopxe.jpg" alt=""
+                                class="discount__item-img discount__item-img--right">
+                            <div class="discount__item-content">
+                                <h1 class="discount__item-title">GIẢM 25%</h1>
+                                <span class="discount__item-des">LỐP ĐỊA HÌNH</span>
+                                <a href="" class="discount__item-btn">Mua ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Sub navbar Car -->
+            <div class="sub-navbar">
+                <ul class="sub-navbar-list">
+                    <li class="sub-navbar-item">
+                        <a href="" class="sub-navbar-link  ">Phổ biến</a>
+                    </li>
+                    <li class="sub-navbar-item">
+                        <a href="" class="sub-navbar-link sub-navbar-link-choose">Mới nhất</a>
+                    </li>
+                    <li class="sub-navbar-item">
+                        <a href="" class="sub-navbar-link">Bán chạy</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <!-- Main Car-->
+            <div class="car row">
+                <div class="col l-3">
+                    <div class="car__item product__item">
+                        <div class="car__item-img-main product__item-img-main">
+                            <img src="./assets/img/banxe-main/296-GTP.png" alt=""
+                                class="car__item-img product__item-img">
+                        </div>
+                        <span class="car__item-name product__item-name">296-GTP</span>
+                    </div>
+                </div>
+                <div class="col l-3">
+                    <div class="car__item product__item">
+                        <div class="car__item-img-main product__item-img-main">
+                            <img src="./assets/img/banxe-main/296-GTS.png" alt=""
+                                class="car__item-img product__item-img">
+                        </div>
+                        <span class="car__item-name product__item-name">296-GTS</span>
+                    </div>
+                </div>
+                <div class="col l-3">
+                    <div class="car__item product__item">
+                        <div class="car__item-img-main product__item-img-main">
+                            <img src="./assets/img/banxe-main/812-Competizion-A.png" alt=""
+                                class="car__item-img product__item-img">
+                        </div>
+                        <span class="car__item-name product__item-name">812 Competizion A</span>
+                    </div>
+                </div>
+                <div class="col l-3">
+                    <div class="car__item product__item">
+                        <div class="car__item-img-main product__item-img-main">
+                            <img src="./assets/img/banxe-main/812-Competizion.png" alt=""
+                                class="car__item-img product__item-img">
+                        </div>
+                        <span class="car__item-name product__item-name">812 Competizion</span>
+                    </div>
+                </div>
+                <div class="col l-3">
+                    <div class="car__item product__item">
+                        <div class="car__item-img-main product__item-img-main">
+                            <img src="./assets/img/banxe-main/812-GTS.png" alt=""
+                                class="car__item-img product__item-img">
+                        </div>
+                        <span class="car__item-name product__item-name">812 GTS</span>
+                    </div>
+                </div>
+                <div class="col l-3">
+                    <div class="car__item product__item">
+                        <div class="car__item-img-main product__item-img-main">
+                            <img src="./assets/img/banxe-main/Daytona-SP3.png" alt=""
+                                class="car__item-img product__item-img">
+                        </div>
+                        <span class="car__item-name product__item-name">Daytona SP3</span>
+                    </div>
+                </div>
+                <div class="col l-3">
+                    <div class="car__item product__item">
+                        <div class="car__item-img-main product__item-img-main">
+                            <img src="./assets/img/banxe-main/ferari-botofino-M.png" alt=""
+                                class="car__item-img product__item-img">
+                        </div>
+                        <span class="car__item-name product__item-name">Ferari-Botofino M</span>
+                    </div>
+                </div>
+                <div class="col l-3">
+                    <div class="car__item product__item">
+                        <div class="car__item-img-main product__item-img-main">
+                            <img src="./assets/img/banxe-main/Ferari-Foma.png" alt=""
+                                class="car__item-img product__item-img">
+                        </div>
+                        <span class="car__item-name product__item-name">Ferari Roma</span>
+                    </div>
+                </div>
+                <div class="col l-3">
+                    <div class="car__item product__item">
+                        <div class="car__item-img-main product__item-img-main">
+                            <img src="./assets/img/banxe-main/Ferari-Purosangue.png" alt=""
+                                class="car__item-img product__item-img">
+                        </div>
+                        <span class="car__item-name product__item-name">Ferari Purosangue</span>
+                    </div>
+                </div>
+                <div class="col l-3">
+                    <div class="car__item product__item">
+                        <div class="car__item-img-main product__item-img-main">
+                            <img src="./assets/img/banxe-main/ferari-Roma-spider.png" alt=""
+                                class="car__item-img product__item-img">
+                        </div>
+                        <span class="car__item-name product__item-name">Ferari Roma Spider</span>
+                    </div>
+                </div>
+                <div class="col l-3">
+                    <div class="car__item product__item">
+                        <div class="car__item-img-main product__item-img-main">
+                            <img src="./assets/img/banxe-main/FS90-Spider.png" alt=""
+                                class="car__item-img product__item-img">
+                        </div>
+                        <span class="car__item-name product__item-name">FS90 Spider</span>
+                    </div>
+                </div>
+                <div class="col l-3">
+                    <div class="car__item product__item">
+                        <div class="car__item-img-main product__item-img-main">
+                            <img src="./assets/img/banxe-main/FS90-Stradale.png" alt=""
+                                class="car__item-img product__item-img">
+                        </div>
+                        <span class="car__item-name product__item-name">FS90 Stradale</span>
+                    </div>
+                </div>
+                <div class="col l-3">
+                    <div class="car__item product__item">
+                        <div class="car__item-img-main product__item-img-main">
+                            <img src="./assets/img/banxe-main/monza-SP1.png" alt=""
+                                class="car__item-img product__item-img">
+                        </div>
+                        <span class="car__item-name product__item-name">Monza SP1</span>
+                    </div>
+                </div>
+                <div class="col l-3">
+                    <div class="car__item product__item">
+                        <div class="car__item-img-main product__item-img-main">
+                            <img src="./assets/img/banxe-main/monza-sp2.png" alt=""
+                                class="car__item-img product__item-img">
+                        </div>
+                        <span class="car__item-name product__item-name">Monza SP2</span>
+                    </div>
+                </div>
+                <div class="col l-3">
+                    <div class="car__item product__item">
+                        <div class="car__item-img-main product__item-img-main">
+                            <img src="./assets/img/banxe-main/SF-90-XX-Stradale.png" alt=""
+                                class="car__item-img product__item-img">
+                        </div>
+                        <span class="car__item-name product__item-name">SF90 XX Stradale</span>
+                    </div>
+                </div>
+                <div class="col l-3">
+                    <div class="car__item product__item">
+                        <div class="car__item-img-main product__item-img-main">
+                            <img src="./assets/img/banxe-main/SF90-Spider.png" alt=""
+                                class="car__item-img product__item-img">
+                        </div>
+                        <span class="car__item-name product__item-name">SF90 Spider</span>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <!-- Buy product -->
+            <!-- Discount product-->
+            <div class="discount row">
+                <div class="col l-3">
+                    <div class="discount__list">
+                        <div class="discount__item">
+                            <div class="discount__item-img-main">
+                                <div class="discount__item-layout"></div>
+                                <img src="./assets/img/discount_product/discount_2.jpg" alt=""
+                                    class="discount__item-img discount__item-img--left--product">
+                            </div>
+                            <div class="discount__item-content">
+                                <h1 class="discount__item-title">GIẢM 20%</h1>
+                                <span class="discount__item-des">Chọn sản phẩm</span>
+                                <a href="" class="discount__item-btn">Mua ngay</a>
+                            </div>
+                        </div>
+                        <div class="discount__item">
+                            <div class="discount__item-layout"></div>
+                            <img src="./assets/img/discount_product/discount_5.jpg" alt=""
+                                class="discount__item-img discount__item-img--left--product ">
+                            <div class="discount__item-content">
+                                <h1 class="discount__item-title">VẬN CHUYỂN MIỄN PHÍ</h1>
+                                <a href="" class="discount__item-btn">Mua ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l-6 discount__item--center">
+                    <div class="discount__item discount__item--center">
+                        <div class="discount__item-img-main">
+                            <div class="discount__item-layout"></div>
+                            <img src="./assets/img/discount_product/discount_1.jpg" alt=""
+                                class="discount__item-img discount__item-img--center">
+                        </div>
+                        <div class="discount__item-content discount__item-content--center">
+                            <h1 class="discount__item-title discount__item-title--center">TIẾT KIỆM 10%</h1>
+                            <span class="discount__item-des discount__item-des--center">TRÊN PHỤ KIỆN NGOẠI THẤT</span>
+                            <a href="" class="discount__item-btn discount__item-btn--center">Mua ngay</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l-3">
+                    <div class="discount__list">
+                        <div class="discount__item">
+                            <div class="discount__item-img-main">
+                                <div class="discount__item-layout"></div>
+                                <img src="./assets/img/discount_product/discount_3.jpg" alt=""
+                                    class="discount__item-img discount__item-img--right">
+                            </div>
+                            <div class="discount__item-content">
+                                <h1 class="discount__item-title">GIẢM 15%</h1>
+                                <span class="discount__item-des">ĐÈN LEB</span>
+                                <a href="" class="discount__item-btn">Mua ngay</a>
+                            </div>
+                        </div>
+                        <div class="discount__item">
+                            <div class="discount__item-layout"></div>
+                            <img src="./assets/img/discount_product/discount_4.jpg" alt=""
+                                class="discount__item-img discount__item-img--right">
+                            <div class="discount__item-content">
+                                <h1 class="discount__item-title">GIẢM 25%</h1>
+                                <span class="discount__item-des">LỐP ĐỊA HÌNH</span>
+                                <a href="" class="discount__item-btn">Mua ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Sub navbar -->
+            <div class="sub-navbar">
+                <ul class="sub-navbar-list">
+                    <li class="sub-navbar-item">
+                        <a href="" class="sub-navbar-link sub-navbar-link-choose ">Phụ tùng </a>
+                    </li>
+                    <li class="sub-navbar-item">
+                        <a href="" class="sub-navbar-link">Lốp bánh xe</a>
+                    </li>
+                    <li class="sub-navbar-item">
+                        <a href="" class="sub-navbar-link">Ngoại thất</a>
+                    </li>
+                    <li class="sub-navbar-item">
+                        <a href="" class="sub-navbar-link">Âm thanh & điện tử</a>
+                    </li>
+                    <li class="sub-navbar-item">
+                        <a href="" class="sub-navbar-link">Đèn xe</a>
+                    </li>
+                    <li class="sub-navbar-item">
+                        <a href="" class="sub-navbar-link">Nội thất </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Main Product -->
+            <div class="product row">
+                <div class="col l-2-4">
+                    <div class="product__item">
+                        <div class="product__item-img-main">
+                            <img src="./assets/img/Main_product/BanChay.jpg" alt="" class="product__item-img">
+                        </div>
+                        <span class="product__item-name">Ban Chạy</span>
+                    </div>
+                </div>
+                <div class="col l-2-4">
+                    <div class="product__item">
+                        <div class="product__item-img-main">
+                            <img src="./assets/img/Main_product/BanhXe.jpg" alt="" class="product__item-img">
+                        </div>
+                        <span class="product__item-name">Bánh Xe</span>
+                    </div>
+                </div>
+                <div class="col l-2-4">
+                    <div class="product__item">
+                        <div class="product__item-img-main">
+                            <img src="./assets/img/Main_product/BocGhe.jpg" alt="" class="product__item-img">
+                        </div>
+                        <span class="product__item-name">Bọc ghế</span>
+                    </div>
+                </div>
+                <div class="col l-2-4">
+                    <div class="product__item">
+                        <div class="product__item-img-main">
+                            <img src="./assets/img/Main_product/candiahinh.jpg" alt="" class="product__item-img">
+                        </div>
+                        <span class="product__item-name">Cản địa hình</span>
+                    </div>
+                </div>
+                <div class="col l-2-4">
+                    <div class="product__item">
+                        <div class="product__item-img-main">
+                            <img src="./assets/img/Main_product/CanLuoi.jpg" alt="" class="product__item-img">
+                        </div>
+                        <span class="product__item-name">Cản lưới</span>
+                    </div>
+                </div>
+                <div class="col l-2-4">
+                    <div class="product__item">
+                        <div class="product__item-img-main">
+                            <img src="./assets/img/Main_product/denLed.jpg" alt="" class="product__item-img">
+                        </div>
+                        <span class="product__item-name">Đèn led</span>
+                    </div>
+                </div>
+                <div class="col l-2-4">
+                    <div class="product__item">
+                        <div class="product__item-img-main">
+                            <img src="./assets/img/Main_product/denpha.jpg" alt="" class="product__item-img">
+                        </div>
+                        <span class="product__item-name">Đèn pha</span>
+                    </div>
+                </div>
+                <div class="col l-2-4">
+                    <div class="product__item">
+                        <div class="product__item-img-main">
+                            <img src="./assets/img/Main_product/DuoiDen.jpg" alt="" class="product__item-img">
+                        </div>
+                        <span class="product__item-name">Đuôi đèn</span>
+                    </div>
+                </div>
+                <div class="col l-2-4">
+                    <div class="product__item">
+                        <div class="product__item-img-main">
+                            <img src="./assets/img/Main_product/DuoiXe.jpg" alt="" class="product__item-img">
+                        </div>
+                        <span class="product__item-name">Đuôi xe</span>
+                    </div>
+                </div>
+                <div class="col l-2-4">
+                    <div class="product__item">
+                        <div class="product__item-img-main">
+                            <img src="./assets/img/Main_product/Keo&moc.jpg" alt="" class="product__item-img">
+                        </div>
+                        <span class="product__item-name">Kéo & móc</span>
+                    </div>
+                </div>
+                <div class="col l-2-4">
+                    <div class="product__item">
+                        <div class="product__item-img-main">
+                            <img src="./assets/img/Main_product/KhiThai.jpg" alt="" class="product__item-img">
+                        </div>
+                        <span class="product__item-name">Khí thải</span>
+                    </div>
+                </div>
+                <div class="col l-2-4">
+                    <div class="product__item">
+                        <div class="product__item-img-main">
+                            <img src="./assets/img/Main_product/LopXe.jpg" alt="" class="product__item-img">
+                        </div>
+                        <span class="product__item-name">Lốp xe</span>
+                    </div>
+                </div>
+                <div class="col l-2-4">
+                    <div class="product__item">
+                        <div class="product__item-img-main">
+                            <img src="./assets/img/Main_product/LuongkhiNap.jpg" alt="" class="product__item-img">
+                        </div>
+                        <span class="product__item-name">Lượng khí nạp</span>
+                    </div>
+                </div>
+                <div class="col l-2-4">
+                    <div class="product__item">
+                        <div class="product__item-img-main">
+                            <img src="./assets/img/Main_product/napcabo.jpg" alt="" class="product__item-img">
+                        </div>
+                        <span class="product__item-name">Nắp cabo</span>
+                    </div>
+                </div>
+                <div class="col l-2-4">
+                    <div class="product__item">
+                        <div class="product__item-img-main">
+                            <img src="./assets/img/Main_product/phanh.jpg" alt="" class="product__item-img">
+                        </div>
+                        <span class="product__item-name">Phanh</span>
+                    </div>
+                </div>
+                <div class="col l-2-4">
+                    <div class="product__item">
+                        <div class="product__item-img-main">
+                            <img src="./assets/img/Main_product/PhuocOTo.jpg" alt="" class="product__item-img">
+                        </div>
+                        <span class="product__item-name">Phuộc</span>
+                    </div>
+                </div>
+                <div class="col l-2-4">
+                    <div class="product__item">
+                        <div class="product__item-img-main">
+                            <img src="./assets/img/Main_product/VienChrome.jpg" alt="" class="product__item-img">
+                        </div>
+                        <span class="product__item-name">Viên Chrome</span>
+                    </div>
+                </div>
+                <div class="col l-2-4">
+                    <div class="product__item">
+                        <div class="product__item-img-main">
+                            <img src="./assets/img/Main_product/voxe.jpg" alt="" class="product__item-img">
+                        </div>
+                        <span class="product__item-name">Vỏ xe</span>
+                    </div>
+                </div>
+                <div class="col l-2-4">
+                    <div class="product__item">
+                        <div class="product__item-img-main">
+                            <img src="./assets/img/Main_product/bed-accessories_ic_5 (1).jpg" alt=""
+                                class="product__item-img">
+                        </div>
+                        <span class="product__item-name">Thiết bị đua</span>
+                    </div>
+                </div>
+                <div class="col l-2-4">
+                    <div class="product__item">
+                        <div class="product__item-img-main">
+                            <img src="./assets/img/Main_product/custom-floor-mats_ic_5.jpg" alt=""
+                                class="product__item-img">
+                        </div>
+                        <span class="product__item-name">Thảm sàn</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Introduction -->
+            <div class="discount row">
+                <div class="col l-3">
+                    <div class="discount__list">
+                        <div class="discount__item">
+                            <div class="discount__item-img-main">
+                                <div class="discount__item-layout"></div>
+                                <img src="./assets/img/Introduction/intro_1.jpg" alt=""
+                                    class="discount__item-img discount__item-img--left--product">
+                            </div>
+                            <div class="discount__item-content">
+                                <h1 class="discount__item-title">Ngoài trời</h1>
+                                <a href="" class="discount__item-btn">Mua ngay</a>
+                            </div>
+                        </div>
+                        <div class="discount__item">
+                            <div class="discount__item-layout"></div>
+                            <img src="./assets/img/Introduction/intro_2.jpg" alt=""
+                                class="discount__item-img discount__item-img--left--product ">
+                            <div class="discount__item-content">
+                                <h1 class="discount__item-title">Bán Tải</h1>
+                                <a href="" class="discount__item-btn">Mua ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l-4-5 discount__item--center">
+                    <div class="discount__item discount__item--center">
+                        <div class="discount__item-img-main">
+                            <div class="discount__item-layout"></div>
+                            <img src="./assets/img/Introduction/intro_center.jpg" alt=""
+                                class="discount__item-img discount__item-img--center">
+                        </div>
+                        <div class="discount__item-content discount__item-content--center">
+                            <h1 class="discount__item-title discount__item-title--center">Dịch vụ & Gagra</h1>
+                            <a href="" class="discount__item-btn discount__item-btn--center__introduction">Mua ngay</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l-4-5">
+                    <div class="discount__list">
+                        <div class="discount__item">
+                            <div class="discount__item-img-main">
+                                <div class="discount__item-layout"></div>
+                                <img src="./assets/img/Introduction/intro_3.jpg" alt=""
+                                    class="discount__item-img discount__item-img--right">
+                            </div>
+                            <div class="discount__item-content">
+                                <h1 class="discount__item-title">Chèo Thuyền & Hàng Hải</h1>
+                                <a href="" class="discount__item-btn discount__item-btn--center__introduction">Mua
+                                    ngay</a>
+                            </div>
+                        </div>
+                        <div class="discount__item">
+                            <div class="discount__item-layout"></div>
+                            <img src="./assets/img/Introduction/intro_4.jpg" alt=""
+                                class="discount__item-img discount__item-img--right">
+                            <div class="discount__item-content">
+                                <h1 class="discount__item-title">RV/Cắm trại</h1>
+                                <a href="" class="discount__item-btn discount__item-btn--center__introduction">Mua
+                                    ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l-6 ">
+                    <div class="discount__item ">
+                        <div class="discount__item-img-main">
+                            <div class="discount__item-layout"></div>
+                            <img src="./assets/img/Introduction/intro_5.jpg" alt=""
+                                class="discount__item-img discount__item-img--bottom">
+                        </div>
+                        <div class="discount__item-content discount__item-content--center">
+                            <h1 class="discount__item-title discount__item-title--center">MÔ TÔ</h1>
+                            <a href="" class="discount__item-btn discount__item-btn--bottom">Mua ngay</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l-6 discount__item--bottom">
+                    <div class="discount__item ">
+                        <div class="discount__item-img-main">
+                            <div class="discount__item-layout"></div>
+                            <img src="./assets/img/Introduction/intro_6.jpg" alt=""
+                                class="discount__item-img discount__item-img--bottom">
+                        </div>
+                        <div class="discount__item-content discount__item-content--center">
+                            <h1 class="discount__item-title discount__item-title--center">THỂ THAO ĐỊA HÌNH</h1>
+                            <a href="" class="discount__item-btn discount__item-btn--bottom">Mua ngay</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!--  Introduction describe -->
+            <div class="introduction">
+                <p class="introduction__des">Thực hiện bảo trì phòng ngừa và sửa chữa kịp thời, tăng mã lực, cải thiện
+                    khả năng xử lý và phanh để có hiệu suất tổng thể tốt hơn, đồng thời mang lại cho ô tô, xe tải hoặc
+                    SUV của bạn vẻ ngoài độc đáo khiến mọi người phải quay đầu dù bạn lăn bánh ở đâu. Bạn có thể làm tất
+                    cả với các bộ phận và phụ kiện từ SpeedCar Garage. Không giống như một số nhà cung cấp dịch vụ hậu
+                    mãi trực tuyến có các bộ phận sửa chữa nhưng không thể giúp bạn trang trí cho chuyến đi của mình
+                    hoặc bán các phụ kiện ngoại thất nhưng không có bánh xe và lốp mà bạn cần để hoàn thiện giao diện,
+                    chúng tôi là điểm đến lý tưởng cho tất cả các nhu yếu phẩm ô tô của bạn. Bất kể bạn muốn làm gì với
+                    chiếc xe của mình hoặc nơi bạn muốn đạp xe – trên đường phố, trên đường đua hay địa hình – bạn sẽ
+                    tìm thấy các bộ phận và phụ kiện có thương hiệu, chất lượng trên kệ kỹ thuật số của chúng tôi để
+                    biến giấc mơ ô tô của bạn thành hiện thực.</p>
+                <p class="introduction__des">Cải thiện chức năng và tính thẩm mỹ của xe sẽ giúp trải nghiệm lái xe và
+                    toàn bộ quyền sở hữu trở nên thú vị hơn và chúng tôi có các sản phẩm phù hợp với mọi sở thích và túi
+                    tiền. Bảo vệ nội thất của bạn và tăng cường sự thoải mái cũng như bầu không khí với thảm sàn có logo
+                    tùy chỉnh, bọc ghế tùy chỉnh, bọc vô lăng và cần số, cá nhân hóa cabin của bạn với bộ bảng điều
+                    khiển bằng gỗ và đồng hồ đo tùy chỉnh, đồng thời khiến mọi chuyến đi trở nên thú vị hơn với đầu thu
+                    phương tiện kỹ thuật số và đầy đủ loa phạm vi. Bảo vệ thùng xe tải của bạn khỏi bị hư hại bằng một
+                    tấm thảm trải giường hoặc lớp lót và tấm phủ tonneau kiểu dáng đẹp, cấu hình thấp. Nâng cao khả năng
+                    vận chuyển và kéo hàng hóa của xe kéo của bạn với bộ sắp xếp giường, bộ mở rộng giường, neo và dây
+                    đai buộc, móc kéo & phụ kiện kéo, v.v. Và bạn có thể tăng thêm sức mạnh cho cabin và giường bằng một
+                    bộ ván chạy hoặc bậc bước lên xe, bậc lên giường & bậc cửa sau và bậc cầu thang.</p>
+            </div>
+
+            <!-- Brands -->
+            <div class="brands">
+                <h1 class="brand__title">Thương hiệu nổi bậc</h1>
+                <div class="row">
+                    <div class="col l-2 brand-important">
+                        <div class="brand__item">
+                            <img class="brand-img" src="./assets/img/Brands/logo_1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col l-2 brand-important">
+                        <div class="brand__item">
+                            <img class="brand-img" src="./assets/img/Brands/logo_2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col l-2 brand-important">
+                        <div class="brand__item">
+                            <img class="brand-img" src="./assets/img/Brands/logo_1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col l-2 brand-important">
+                        <div class="brand__item">
+                            <img class="brand-img" src="./assets/img/Brands/logo_11.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col l-2 brand-important">
+                        <div class="brand__item">
+                            <img class="brand-img" src="./assets/img/Brands/logo_5.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col l-2 brand-important">
+                        <div class="brand__item">
+                            <img class="brand-img" src="./assets/img/Brands/logo_6.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col l-2 brand-important">
+                        <div class="brand__item">
+                            <img class="brand-img" src="./assets/img/Brands/logo_7.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col l-2 brand-important">
+                        <div class="brand__item">
+                            <img class="brand-img" src="./assets/img/Brands/logo_8.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col l-2 brand-important">
+                        <div class="brand__item">
+                            <img class="brand-img" src="./assets/img/Brands/logo_9.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col l-2 brand-important">
+                        <div class="brand__item">
+                            <img class="brand-img" src="./assets/img/Brands/logo_10.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col l-2 brand-important">
+                        <div class="brand__item">
+                            <img class="brand-img" src="./assets/img/Brands/logo_11.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col l-2 brand-important">
+                        <div class="brand__item">
+                            <img class="brand-img" src="./assets/img/Brands/logo_12.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer__line">
+            <h1 class="footer__line-title">ĐẶC QUYỀN MỞ KHÓA</h1>
+            <a href="" class="footer__line-btn">THEO DÕI BẢNG TIN CỦA CHÚNG TÔI </a>
+        </div>
+        <div class="container grid wide">
+            <div class="row footer__main">
+                <div class="col l-4">
+                    <div class="footer__content">
+                        <div class="footer__link">
+                            <a href="" class="footer__link-btn footer__link-btn--left">
+                                <i class="footer__link-icon fa-brands fa-facebook-f"></i>
+                            </a>
+
+                            <a href="" class="footer__link-btn">
+                                <i class="footer__link-icon fa-brands fa-twitter"></i>
+                            </a>
+
+                            <a href="" class="footer__link-btn">
+                                <i class="footer__link-icon fa-brands fa-youtube"></i>
+                            </a>
+
+                            <a href="" class="footer__link-btn">
+                                <i class="footer__link-icon fa-brands fa-tiktok"></i>
+                            </a>
+
+                            <a href="" class="footer__link-btn">
+                                <i class="footer__link-icon fa-brands fa-square-instagram"></i>
+                            </a>
+
+                        </div>
+
+                        <div class="footer__inspiration">
+                            <i class="footer__inspiration-icon fa-solid fa-car"></i>
+                            <h2 class="footer__inspiration-title">Phòng trưng bày cảm hứng</h2>
+                        </div>
+
+                        <p class="footer__des">Tất cả tên, ký hiệu và mô tả của nhà sản xuất được sử dụng trong hình ảnh
+                            và văn bản của chúng tôi chỉ được sử dụng cho mục đích nhận dạng. Không suy luận hay ngụ ý
+                            rằng bất kỳ mặt hàng nào được CARiD.com bán đều là sản phẩm được ủy quyền bởi hoặc được kết
+                            nối theo bất kỳ cách nào với bất kỳ nhà sản xuất xe nào được hiển thị trên trang này.</p>
+                    </div>
+                </div>
+
+                <div class="col l-4 footer__content-center">
+                    <div class="footer__info">
+                        <h2 class="footer__info-title">DỊCH VỤ KHÁCH HÀNG</h2>
+                        <ul class="footer__info-list">
+                            <li class="footer__info-item">
+                                <a href="">Trung tâm hỗ trợ</a>
+                            </li>
+                            <li class="footer__info-item">
+                                <a href="">Tài khoản của tôi</a>
+                            </li>
+                            <li class="footer__info-item">
+                                <a href="">Theo dõi đơn hàng của tôi</a>
+                            </li>
+                            <li class="footer__info-item">
+                                <a href="">Chính sách hoàn trả</a>
+                            </li>
+                            <li class="footer__info-item">
+                                <a href="">Chính sách bảo mật</a>
+                            </li>
+                            <li class="footer__info-item">
+                                <a href="">Đấu giá</a>
+                            </li>
+                            <li class="footer__info-item">
+                                <a href="">Thẻ quà tặng</a>
+                            </li>
+                            <li class="footer__info-item">
+                                <a href="">Liên hệ chúng tôi</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__info">
+                        <h2 class="footer__info-title">THÔNG TIN</h2>
+                        <ul class="footer__info-list">
+                            <li class="footer__info-item">
+                                <a href="">Về chúng tôi</a>
+                            </li>
+                            <li class="footer__info-item">
+                                <a href="">Hướng dẫn & bài viết</a>
+                            </li>
+                            <li class="footer__info-item">
+                                <a href="">Phản hồi khách hàng</a>
+                            </li>
+                            <li class="footer__info-item">
+                                <a href="">Mã phiếu mua hàng</a>
+                            </li>
+                            <li class="footer__info-item">
+                                <a href="">Bản tin tức</a>
+                            </li>
+                            <li class="footer__info-item">
+                                <a href="">Buôn bán</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col l-4">
+                    <div class="footer__info footer__info--right">
+                        <h2 class="footer__info-title">Liên lạc</h2>
+                        <div class="footer__contact">
+                            <i class="footer__contact-icon fa-solid fa-location-dot"></i>
+                            <p class="footer__contact-des">
+                                SpeedCar Garage <br>
+                                656/100 Quan Trung <br>
+                                Gò Vấp, Tp,Hồ Chí Minh
+                            </p>
+                        </div>
+                        <div class="footer__contact">
+                            <i class="footer__contact-icon fa-solid fa-phone"></i>
+                            <p class="footer__contact-des">
+                                Số Điện Thoại: 0123456789 <br>
+                                Quốc tế: 0122222222 <br>
+                                Fax: 1.609.964.1789
+                            </p>
+                        </div>
+                        <div class="footer__contact">
+                            <i class="footer__contact-icon fa-solid fa-comments"></i>
+                            <a href="" class="footer__contact-btn">Trò chuyện trực tiếp</a>
+                        </div>
+                        <div class="footer__contact">
+                            <i class="footer__contact-icon fa-solid fa-envelope"></i>
+                            <p class="footer__contact-des footer__contact-des--email">
+                                Email: tranngocphat240111@gmail.com
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="Copyright">
+            <div class="container grid wide">
+                <div class="Copyright__info">
+                    <span class="Copyright-des">Bản quyền © 2020 - 2024 SpeedCar.com. Đã đăng ký bản quyền</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+
 </body>
+
 </html>

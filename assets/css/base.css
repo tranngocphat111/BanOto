@@ -16,19 +16,44 @@ html {
     font-size: 62.5%;
 }
 
+body {
+    position: relative;
+}
 
-.overlay {
+.overlay__select-car,
+.overlay__category {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.4);
-    z-index: 1;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 2;
     display: none;
     animation: fadeIn linear 0.2s;
 }
 
+.overlay__category-option {
+    position: absolute;
+    top: 2.9%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 3;
+    display: none;
+    animation: fadeIn linear 0.2s;
+}
+
+.panner__layout {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.2);
+    z-index: 1;
+}
 /* Animation */
 @keyframes headerNotifyGrowth {
     from {
