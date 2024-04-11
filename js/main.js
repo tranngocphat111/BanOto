@@ -34,12 +34,12 @@ var OverlayOptionCar = document.querySelector('.overlay__select-car');
 //Open
 
 
-selectCar.onclick = function(){
+selectCar.onclick = function () {
     OverlayOptionCar.style.display = 'block';
     optionCar.style.display = 'block';
 }
 // Close
-closeCarOption.onclick = function(){
+closeCarOption.onclick = function () {
     OverlayOptionCar.style.display = 'none';
     optionCar.style.display = 'none';
 }
@@ -337,26 +337,35 @@ closeIcon.forEach((close, index) => {
 
 
 // Scroll
-    var select_main = document.querySelector('.select--Main');
-    var select_main_text = document.querySelector('.select--Main__content');
-    window.addEventListener('scroll',function() {
-        if(window.pageYOffset > 600){
-            Object.assign(select_main.style,{
-                position : 'fixed',
-                marginTop: '0',
-                zIndex: '3',
-                padding: '15px 15px'
-            })
-            select_main_text.style.display = 'none';
-        }else{
-            Object.assign(select_main.style,{
-                position : 'relative',
-                marginTop: '32px',
-                zIndex: '0',
-                padding: '90px 20px 50px 20px' 
-            })
-            select_main_text.style.display = 'block'
-        }
-    })
+var btn_Reloadheading = document.querySelector(".reLoadHeading");
+
+var select_main = document.querySelector('.select--Main');
+var select_main_text = document.querySelector('.select--Main__content');
+window.addEventListener('scroll', function () {
+    if (window.pageYOffset > 600) {
+        btn_Reloadheading.style.display = 'block';
+        Object.assign(select_main.style, {  
+            position: 'fixed',
+            marginTop: '0',
+            zIndex: '3',
+            padding: '15px 15px'
+        })
+        select_main_text.style.display = 'none';
+    } else {
+        btn_Reloadheading.style.display = 'none';
+        Object.assign(select_main.style, {
+            position: 'relative',
+            marginTop: '32px',
+            zIndex: '0',
+            padding: '90px 20px 50px 20px'
+        })
+        select_main_text.style.display = 'block'
+    }
+})
+
+btn_Reloadheading.addEventListener('click',function(){
+    window.scrollTo(0,0);
+})
+
 
 

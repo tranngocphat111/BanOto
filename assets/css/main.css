@@ -725,14 +725,13 @@
     display: flex;
     position: relative;
     overflow: hidden;
-    width: 160%;
+    width: 136%;
     left: -25%;
 
 }
 
 .panner-img {
-    position: relative;
-    width: 160%;
+    position: relative; 
     height: 380px;
     background-color: #ccc;
     text-align: center;
@@ -956,15 +955,15 @@
     color: var(--text-color);
     font-size: 1.5rem;
     padding-bottom: 10px;
+    border-bottom: 3px solid#fff;
 }
 
 .sub-navbar-link:hover {
     color: var(--primary-color);
-}
-
-.sub-navbar-link-choose {
     border-bottom: 3px solid #022344;
 }
+
+
 
 /* Main car */
 .car__item-img {
@@ -1247,3 +1246,27 @@
 .Copyright--sub {
     margin-top: 57px;
 }
+
+
+.reLoadHeading {
+    position: fixed;
+    right: 2%;
+    bottom: 10%;
+    border-radius: 50%;
+    padding: 12px 16px;
+    border: 1px solid#ccc;
+    display: none;
+    animation: fadeIn  1s;
+}
+
+.reLoadHeading:hover {
+    cursor: pointer;
+    border: 1px solid #2a2a2a;
+    background-color: #373636;
+}
+
+.reLoadHeading i {
+    font-size: 2rem;
+    color: var(--white-color);
+}
+
