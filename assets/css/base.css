@@ -75,3 +75,7 @@ body {
         opacity: 1;
     }
 }
+
+.border__bottom {
+    border-bottom: 1px solid #ccc;
+}

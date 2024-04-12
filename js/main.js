@@ -342,7 +342,7 @@ var btn_Reloadheading = document.querySelector(".reLoadHeading");
 var select_main = document.querySelector('.select--Main');
 var select_main_text = document.querySelector('.select--Main__content');
 window.addEventListener('scroll', function () {
-    if (window.pageYOffset > 600) {
+    if (window.pageYOffset > 900) {
         btn_Reloadheading.style.display = 'block';
         Object.assign(select_main.style, {  
             position: 'fixed',
