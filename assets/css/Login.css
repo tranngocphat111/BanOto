@@ -82,6 +82,7 @@
     color: var(--text-color);
     font-size: 1.6rem;
     margin-bottom: 28px;
+    display: flex;
 }
 
 .option input {
@@ -90,7 +91,7 @@
 }
 
 .option__name {
-    margin-right: 8px;
+    margin-right: 12px;
 }
 
 .login__input {

@@ -267,7 +267,7 @@
     }
 
     .login__input {
-        width: 340px;
+        width: 250px;
     }
 
     .header__right {
@@ -276,5 +276,29 @@
 
     .Copyright__info {
         margin-top: 172px;
+    }
+
+    .login {
+        padding: 30px;
+    }
+
+    .option {
+        flex-direction: column;
+    }
+
+    .option div {
+        margin-bottom: 12px;
+    }
+
+    .submit {
+        width: 80%;
+    }
+
+    .content__title {
+        font-size: 3rem;
+    }
+
+    .des {
+        margin-right: 90px;
     }
 }
