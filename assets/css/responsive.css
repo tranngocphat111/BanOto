@@ -267,11 +267,11 @@
     }
 
     .login__input {
-        width: 250px;
+        width: 260px;
     }
 
     .header__right {
-        margin-left: 160px;
+        margin-left: 150px;
     }
 
     .Copyright__info {
@@ -291,7 +291,7 @@
     }
 
     .submit {
-        width: 80%;
+        width: 93%;
     }
 
     .content__title {
@@ -299,6 +299,6 @@
     }
 
     .des {
-        margin-right: 90px;
+        width: 282px;
     }
 }
