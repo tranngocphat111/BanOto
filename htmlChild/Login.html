@@ -11,8 +11,92 @@
     <link rel="stylesheet" href="../assets/css/grid.css">
     <link rel="stylesheet" href="../assets/css/Login.css">
     <link rel="stylesheet" href="../assets/css/main.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
     <title>Đăng Nhập</title>
 </head>
+<style>
+    .red {
+        color: red;
+        font-size: 1.2rem;
+        margin-bottom: 12px;
+    }
+</style>
+<script>
+    $(document).ready(function () {
+        $("#txtEmail").blur(function () {
+            if ($("#txtEmail").val() == '') {
+                $("#tbEmail").html("Không được để rỗng");
+                return;
+            }
+            var ktra = /^([a-zA-Z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,63})$/;
+            if (!ktra.test($("#txtEmail").val())) {
+                $("#tbEmail").html("Vui lòng nhập đúng Email");
+            } else {
+                $("#tbEmail").html("");
+            }
+        })
+
+        $("#txtMK").blur(function () {
+            if ($("#txtMK").val() == '') {
+                $("#tbMK").html("Không được để rỗng");
+                return;
+            }
+
+            $("#tbMK").html("");
+
+
+        })
+
+        $(".submit").click(function () {
+            if ($("#txtEmail").val() != "" && $("#txtMK").val() != "") {
+                alert("Đăng Nhập thành công");
+                $(".submit").attr("href", "../index.html")
+            }
+
+        })
+
+        $("#txtNLMK").blur(function () {
+            if ($("#txtNLMK").val() == '') {
+                $("#tbNLMK").html("Không được để rỗng");
+                return;
+            }
+            if ($("#txtNLMK").val() != $("#txtMK").val()) {
+                $("#tbNLMK").html("Mật khẩu không khớp");
+            } else {
+                $("#tbNLMK").html("");
+
+            }
+
+
+        })
+
+        $(".submit").click(function () {
+            // Ktra Tài khoản
+            if ($("#txtEmail").val() == '') {
+                $("#tbEmail").html("Không được để rỗng");
+                return;
+            }
+            var ktra = /^([a-zA-Z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,63})$/;
+            if (!ktra.test($("#txtEmail").val())) {
+                $("#tbEmail").html("Vui lòng nhập đúng Email");
+                return;
+            } else {
+                $("#tbEmail").html("");
+            }
+
+            // Ktra MK
+            if ($("#txtMK").val() == '') {
+                $("#tbMK").html("Không được để rỗng");
+                return;
+            }
+            $("#tbMK").html("");
+
+            alert("Đăng Nhập thành công");
+            $(".submit").attr("href", "../index.html")
+
+        })
+    })
+</script>
 
 <body>
     <!-- Container -->
@@ -41,14 +125,17 @@
                 <form action="" class="login__main">
                     <span class="login__title">Vui lòng đăng nhập ở dưới</span>
                     <div class="option">
-                        <input type="radio" name="option"  id="" >
+                        <input type="radio" name="option" id="">
                         <span class="option__name">Tôi là một khách hàng cũ</span>
-                        <input type="radio" name="option"  id="">
+                        <input type="radio" name="option" id="">
                         <span class="option__name">Tôi là một khách hàng mới</span>
                     </div>
-                    <input type="email" class="login__input" required placeholder="Vui lòng nhập Email" >
-                    <input type="password" class="login__input" required placeholder="Vui lòng nhập mật khẩu">
-                    <button class="submit" type="submit">ĐĂNG NHẬP</button>
+                    <input type="email" class="login__input" required placeholder="Vui lòng nhập Email" id="txtEmail">
+                    <span id="tbEmail" class="red"></span>
+                    <input type="password" class="login__input" required placeholder="Vui lòng nhập mật khẩu"
+                        id="txtMK">
+                    <span id="tbMK" class="red"></span>
+                    <a class="submit" type="submit">ĐĂNG NHẬP</a>
                     <div class="forget">
                         <span class="forget__title">Quên mật khẩu ?</span>
                         <a href="" class="header-select__user-link">Bấm vào đây</a>

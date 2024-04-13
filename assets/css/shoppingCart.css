@@ -182,7 +182,10 @@
     border-radius: 5px;
     background-color: #fff;
     border: 1px solid #000;
-    margin-right: 230px;
+    margin-right: 230px; 
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: var(--text-color);
 }
 
 .shoppingCart__keepShopping:hover {

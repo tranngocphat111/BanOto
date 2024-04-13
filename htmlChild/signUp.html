@@ -11,8 +11,113 @@
     <link rel="stylesheet" href="../assets/css/grid.css">
     <link rel="stylesheet" href="../assets/css/Login.css">
     <link rel="stylesheet" href="../assets/css/main.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
     <title>Đăng Nhập</title>
 </head>
+<style>
+    .red {
+        color: red;
+        font-size: 1.2rem;
+        margin-bottom: 12px;
+    }
+</style>
+<script>
+    $(document).ready(function () {
+        $("#txtEmail").blur(function () {
+            if ($("#txtEmail").val() == '') {
+                $("#tbEmail").html("Không được để rỗng");
+                return;
+            }
+            var ktra = /^([a-zA-Z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,63})$/;
+            if (!ktra.test($("#txtEmail").val())) {
+                $("#tbEmail").html("Vui lòng nhập đúng Email");
+            } else {
+                $("#tbEmail").html("");
+            }
+        })
+
+        $("#txtMK").blur(function () {
+            if ($("#txtMK").val() == '') {
+                $("#tbMK").html("Không được để rỗng");
+                return;
+            }
+            var ktra = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/
+            if (!ktra.test($("#txtMK").val())) {
+                $("#tbMK").html("Tối thiểu tám ký tự, ít nhất một chữ cái viết hoa, một chữ cái viết thường, một số và một ký tự đặc biệt");
+            } else {
+                $("#tbMK").html("");
+
+            }
+
+
+        })
+
+
+        $("#txtNLMK").blur(function () {
+            if ($("#txtNLMK").val() == '') {
+                $("#tbNLMK").html("Không được để rỗng");
+                return;
+            }
+            if ($("#txtNLMK").val() != $("#txtMK").val()) {
+                $("#tbNLMK").html("Mật khẩu không khớp");
+            } else {
+                $("#tbNLMK").html("");
+
+            }
+
+
+        })
+
+        $(".submit").click(function () {
+            // Ktra Tài khoản
+            if ($("#txtEmail").val() == '') {
+                $("#tbEmail").html("Không được để rỗng");
+                return;
+            }
+            var ktra = /^([a-zA-Z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,63})$/;
+            if (!ktra.test($("#txtEmail").val())) {
+                $("#tbEmail").html("Vui lòng nhập đúng Email");
+                return;
+            } else {
+                $("#tbEmail").html("");
+            }
+
+
+
+            // Ktra MK
+            if ($("#txtMK").val() == '') {
+                $("#tbMK").html("Không được để rỗng");
+                return;
+            }
+            var ktra = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/
+            if (!ktra.test($("#txtMK").val())) {
+                $("#tbMK").html("Tối thiểu tám ký tự, ít nhất một chữ cái viết hoa, một chữ cái viết thường, một số và một ký tự đặc biệt");
+                return;
+            } else {
+                $("#tbMK").html("");
+
+            }
+
+            // Ktra NLMK
+            if ($("#txtNLMK").val() == '') {
+                $("#tbNLMK").html("Không được để rỗng");
+                return;
+            }
+            if ($("#txtNLMK").val() != $("#txtMK").val()) {
+                $("#tbNLMK").html("Mật khẩu không khớp");
+                return;
+            } else {
+                $("#tbNLMK").html("");
+
+            }
+            alert("Đăng Ký thành công");
+            $(".submit").attr("href", "./Login.html")
+
+        })
+
+    })
+
+</script>
 
 <body>
     <!-- Container -->
@@ -40,13 +145,18 @@
             <div class="login">
                 <form action="" class="login__main">
                     <span class="login__title">Đặt Địa chỉ Email và mật khẩu người dùng</span>
-                    <input type="email" class="login__input" required placeholder="Vui lòng nhập Email" >
-                    <input type="password" class="login__input" required placeholder="Vui lòng nhập mật khẩu">
-                    <input type="password" class="login__input" required placeholder="Vui lòng nhập lại mật khẩu">
-
-                    <button class="submit" type="submit">TẠO TÀI KHOẢN</button>
+                    <input type="email" class="login__input" required placeholder="Vui lòng nhập Email" id="txtEmail">
+                    <span id="tbEmail" class="red"></span>
+                    <input type="password" class="login__input" required placeholder="Vui lòng nhập mật khẩu"
+                        id="txtMK">
+                    <span id="tbMK" class="red"></span>
+                    <input type="password" class="login__input" required placeholder="Vui lòng nhập lại mật khẩu"
+                        id="txtNLMK">
+                    <span id="tbNLMK" class="red"></span>
+                    <a class="submit" type="submit">TẠO TÀI KHOẢN</a>
                     <div class="forget">
-                        <span class="des">Bằng cách tạo tài khoản, bạn đồng ý với Chính sách quyền riêng tư và điều khoản sử dụng của chúng tôi</span>
+                        <span class="des">Bằng cách tạo tài khoản, bạn đồng ý với Chính sách quyền riêng tư và điều
+                            khoản sử dụng của chúng tôi</span>
                     </div>
                 </form>
             </div>

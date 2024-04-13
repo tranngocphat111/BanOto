@@ -1,7 +1,9 @@
 
 /* Header */
 
-
+html {
+    scroll-behavior: smooth;
+}
 .header {
     margin-bottom: 2px;
 }
@@ -1162,8 +1164,6 @@
 }
 
 /* footer info */
-.footer__info {}
-
 .footer__content-center {
     display: flex;
     justify-content: space-between;
