@@ -1,0 +1,18 @@
+video {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #ccc;
+}
+
+.overlay__category-option {
+    top: 4.9%;
+}
+
+.nav__option-main--1,
+.nav__option-main--2,
+.nav__option-main--3,
+.nav__option-main--4,
+.nav__option-main--5,
+.nav__option-main--6 {
+    top: 4.9%;
+}
