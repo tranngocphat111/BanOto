@@ -698,6 +698,7 @@ html {
 .nav__option-item {
     padding: 12px 12px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .nav__option-item-img-main {
